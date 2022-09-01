@@ -1,2 +1,2 @@
 # gohome
-A faster version of the pidgeonhole sort algorithm, coded in python
+A (sometimes) faster version of the pidgeonhole sort algorithm, coded in python
