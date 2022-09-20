@@ -54,7 +54,7 @@ Test config: 20 “Best Case” datasets, each one with a scale from 0 to 9999
 
 
 As we can see GoHome, with an average speed of 0.1666 sec, is the slowest algorithm in this kind of scenario; Insertion Sort, with 0.0014 sec, is the fastest one: that’s ~100% faster. 
-
+------------
 ### Worst Case Scenario 
 ###### [ N-1, …, 2, 1, 0 ]
 
@@ -81,7 +81,7 @@ GoHome performs better than others algorithms:
 Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
 Test config: 20 “Worst Case” datasets, each from 4’999’999 to 0
 
-
+------------
 ### Random Case Scenario
 ###### [ …, N-1, … ] 
 #### Small Pool, Small Set
@@ -134,6 +134,18 @@ GoHome performs better than others algorithms:
 >![image](./readme/images/07.png) Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
 Test config: 20 “Random Case” datasets, each with 5’000’000 random numbers from 1 to 5’000’000
 
+------------
+
+### Conclusions
+
+In conclusion, GoHome is faster on all "Worst Cases" and "Random Cases" except for the "Big Pool, Small Set" scenario, in which the pool where the data is taken is more big than the set itself. In this cases gohome will suffer "holes" (None values) in the "Oarr"; more big is the pool in comparison to the set, more of these "holes" we will have, thus the algorithm will be more slow proportionally.
+
+| Random Cases | Small Pool, Small Set | Small Pool, Big Set | Big Pool, Small Set |  Big Pool, Big Set  | 
+| ------------ | ------------ | ------------ |  ------------ | ------------ |
+| GoHome | Suited | Suited| Not Suited | Suited |  
+
+
+#### Data recap
 
 
 
