@@ -2,7 +2,7 @@
 
 A faster (sometime) faster Sorting Algorithm inspired by Pigeonhole Sort and Countin Sort, coded in python.
 
-### The Algorithm
+### The Algorithm 
 
 GoHome is inspired from Pigeonhole Sort and Counting Sort; essentially it create “Oarr” (Ordering Array) and cycle the dataset using the values as index for counting the element: as example if we have the current value equal to 5, then it will access Oarr[5] and sum one; if a number is outside the size of Oarr, a new array is created and merged with Oarr.
 The final array will be built using Oarr, taking the index as final value and repeating it “Oarr[index]” times.
