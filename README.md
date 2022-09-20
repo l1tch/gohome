@@ -1,6 +1,6 @@
 # :: GoHome ::
 
-A faster (sometime) faster Sorting Algorithm inspired by Pigeonhole Sort and Countin Sort, coded in python.
+A (sometimes) faster Sorting Algorithm inspired by Pigeonhole Sort and Countin Sort, coded in python.
 
 ### The Algorithm 
 
