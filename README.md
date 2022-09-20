@@ -62,8 +62,8 @@ As we can see GoHome, with an average speed of 0.1666 sec, is the slowest algori
 
 GoHome performs better than others algorithms: 
 0.00253 average seconds against
-0.00457 average seconds of Counting Sort (~80% slower).
-Merge Sort stands last with an average of 0.03783 seconds (~1400% slower).
+0.00457 average seconds of Counting Sort (GH ~80% faster).
+Merge Sort stands last with an average of 0.03783 seconds (GH  ~1400% faster).
 
 > ![image](./readme/images/02.png)
 Algorithms: Counting Sort, Pigeonhole Sort, GoHome, Merge Sort;
@@ -74,8 +74,8 @@ Test config: 20 “Worst Case” datasets, each from 9999 to 0
 
 GoHome performs better than others algorithms: 
 1.44360 average seconds against
-5.29859 average seconds of Pigeonhole Sort (~270% faster) and
-2.53476 average seconds of Counting Sort (~75% faster).
+5.29859 average seconds of Pigeonhole Sort (GH ~270% faster) and
+2.53476 average seconds of Counting Sort (GH ~75% faster).
 
 >![image](./readme/images/03.png)
 Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
@@ -88,8 +88,8 @@ Test config: 20 “Worst Case” datasets, each from 4’999’999 to 0
 
 GoHome performs better than others algorithms: 
 0.000365 average seconds against 
-0.000498 average seconds of Pigeonhole Sort (~35% faster) and 
-0.000546 average seconds of Counting Sort (~50% faster).
+0.000498 average seconds of Pigeonhole Sort (GH ~35% faster) and 
+0.000546 average seconds of Counting Sort (GH ~50% faster).
 
 >![image](./readme/images/04.png)  
  Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
@@ -101,8 +101,8 @@ Test config: 20 “Random Case” datasets, each with 1000 random numbers from 0
     
 GoHome performs better than others algorithms: 
 0.70897 average seconds against 
-1.91365 average seconds of Pigeonhole Sort (~170% faster) and 
-2.89057 average seconds of Counting Sort (~300% faster).
+1.91365 average seconds of Pigeonhole Sort (GH ~170% faster) and 
+2.89057 average seconds of Counting Sort (GH ~300% faster).
 
 >![image](./readme/images/05.png)  
  Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
@@ -115,8 +115,8 @@ Test config: 20 “Random Case” datasets, each with 5’000’000 random numbe
 
 GoHome doesn’t performs better than others algorithms: 
 0.41934 average seconds against
-0.10736 average seconds of Pigeonhole Sort (~75% slower) and 
-0.54392 average seconds of Counting Sort (~30% faster).
+0.10736 average seconds of Pigeonhole Sort (GH ~75% slower) and 
+0.54392 average seconds of Counting Sort (GH ~30% faster).
 
 >![image](./readme/images/06.png)
 Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
@@ -128,8 +128,8 @@ Test config: 20 “Random Case” datasets, each with 1000 random numbers from 1
 
 GoHome performs better than others algorithms: 
 2.58956 average seconds against 
-11.06322 average seconds of Pigeonhole Sort (~330% faster) and 
-7.17371 average seconds of Counting Sort (~180% faster).
+11.06322 average seconds of Pigeonhole Sort (GH ~330% faster) and 
+7.17371 average seconds of Counting Sort (GH ~180% faster).
 
 >![image](./readme/images/07.png) Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
 Test config: 20 “Random Case” datasets, each with 5’000’000 random numbers from 1 to 5’000’000
