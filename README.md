@@ -1,11 +1,11 @@
 # :: GoHome ::
 
-A (sometimes) faster Sorting Algorithm inspired by Pigeonhole Sort and Countin Sort, coded in python.
+A (sometimes) faster Sorting Algorithm inspired by Pigeonhole Sort and Countin Sort, coded in Python 3.8.0.
 
 ### The Algorithm 
 
-GoHome is inspired from Pigeonhole Sort and Counting Sort; essentially it create “Oarr” (Ordering Array) and cycle the dataset using the values as index for counting the element: as example if we have the current value equal to 5, then it will access Oarr[5] and sum one; if a number is outside the size of Oarr, a new array is created and merged with Oarr.
-The final array will be built using Oarr, taking the index as final value and repeating it “Oarr[index]” times.
+GoHome is inspired from Pigeonhole Sort and Counting Sort; essentially, it creates an “Oarr” (Ordering Array) and cycles the dataset using the values as index for counting the element: for example, if we have the current value equal to 5, then it will access Oarr[5] and sum one; if a number is outside the size of Oarr, a new array is created and merged with Oarr.
+The final array will be built using Oarr, taking the index as final value and repeating it *“Oarr[index]”* times.
 
 #### My tests are taken on 
 
@@ -46,25 +46,24 @@ NUMA node0 CPU(s):   0-7
 ###### [ 0, 1, 2, …, N-1 ]
 
 
-The GoHome algorithm is not suited for the so-called “Best Cases”, because the structure of the code performs  poorly in this kind of situation and it shouldn't be used if the data source can provide such configuration;  Thus I’m not going analyze the “Best Cases” furthermore.
+The GoHome algorithm is not suited for the so-called “Best Cases”, because the structure of the code performs poorly in this kind of situation and it shouldn't be used if the data source can provide such configuration; Thus, I’m not going to analyze the “Best Cases” furthermore.
 
 >![image](./readme/images/01.png) Algorithms: Counting Sort, Pigeonhole Sort, GoHome, Merge Sort, Insertion Sort;
-Test config: 20 “Best Case” datasets, each one with scale from 0 to 9999 
+Test config: 20 “Best Case” datasets, each one with a scale from 0 to 9999 
 
 
 
-As we can see, GoHome, with an average speed of 0.1666 sec is the slowest algorithm in this kind of scenario; Insertion Sort, with 0.0014 sec is the fastest one; that’s ~100% faster. 
+As we can see GoHome, with an average speed of 0.1666 sec, is the slowest algorithm in this kind of scenario; Insertion Sort, with 0.0014 sec, is the fastest one: that’s ~100% faster. 
 
-------------
 ### Worst Case Scenario 
 ###### [ N-1, …, 2, 1, 0 ]
 
 #### Small Set
 
 GoHome performs better than others algorithms: 
-GoHome Average of 0.00253 sec
-Counting Sort Average of 0.00457 sec (~80% faster)
-Merge Sort positions as last one with 0.03783 sec (~1400% faster).
+0.00253 average seconds against
+0.00457 average seconds of Counting Sort (~80% slower).
+Merge Sort stands last with an average of 0.03783 seconds (~1400% slower).
 
 > ![image](./readme/images/02.png)
 Algorithms: Counting Sort, Pigeonhole Sort, GoHome, Merge Sort;
@@ -82,7 +81,7 @@ GoHome performs better than others algorithms:
 Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
 Test config: 20 “Worst Case” datasets, each from 4’999’999 to 0
 
-------------
+
 ### Random Case Scenario
 ###### [ …, N-1, … ] 
 #### Small Pool, Small Set
@@ -114,7 +113,7 @@ Test config: 20 “Random Case” datasets, each with 5’000’000 random numbe
 
 #### Big Pool, Small Set
 
-GoHome don’t performs better than others algorithms: 
+GoHome doesn’t performs better than others algorithms: 
 0.41934 average seconds against
 0.10736 average seconds of Pigeonhole Sort (~75% slower) and 
 0.54392 average seconds of Counting Sort (~30% faster).
@@ -134,18 +133,8 @@ GoHome performs better than others algorithms:
 
 >![image](./readme/images/07.png) Algorithms: Counting Sort, Pigeonhole Sort, GoHome;
 Test config: 20 “Random Case” datasets, each with 5’000’000 random numbers from 1 to 5’000’000
-------------
-
-### Conclusions
-
-In conclusion, GoHome is faster on all "Worst Cases" and "Random Cases" except for the "Big Pool, Small Set" scenario, in which the pool where the data is taken is more big than the set itself. In this cases gohome will suffer "holes" (None values) in the "Oarr"; more big is the pool in comparison to the set, more of these "holes" we will have, thus the algorithm will be more slow proportionally.
-
-| Random Cases | Small Pool, Small Set | Small Pool, Big Set | Big Pool, Small Set |  Big Pool, Big Set  | 
-| ------------ | ------------ | ------------ |  ------------ | ------------ |
-| GoHome | Suited | Suited| Not Suited | Suited |  
 
 
-#### Data recap
 
 
 | Worst Cases   |   Small Set  | Big Set |
