@@ -43,7 +43,7 @@ NUMA node0 CPU(s):   0-7
 
 ------------
 ### Best Case Scenario 
-######[ 0, 1, 2, …, N-1 ]
+###### [ 0, 1, 2, …, N-1 ]
 
 
 The GoHome algorithm is not suited for the so-called “Best Cases”, because the structure of the code performs  poorly in this kind of situation and it shouldn't be used if the data source can provide such configuration;  Thus I’m not going analyze the “Best Cases” furthermore.
@@ -82,8 +82,9 @@ Algorithms: Counting Sort, Pigeonhole Sort, GoHome
 Test config: 20 “Worst Case” datasets, each from 4’999’999 to 0
 
 
-Random Case Scenario [ …, N-1, … ] 
-Small Pool, Small Set
+### Random Case Scenario
+###### [ …, N-1, … ] 
+#### Small Pool, Small Set
 
 GoHome performs better than others algorithms: 
 0.000365 average seconds against 
