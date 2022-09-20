@@ -52,7 +52,7 @@ The GoHome algorithm is not suited for the so-called “Best Cases”, because t
 Test config: 20 “Best Case” datasets, each one with a scale from 0 to 9999 
 
 
-As we can see GoHome, with an average speed of 0.1666 sec, is the slowest algorithm in this kind of scenario; Insertion Sort, with 0.0014 sec, is the fastest one: that’s ~100% faster. 
+As we can see, GoHome, with an average speed of 0.1666 sec, is the slowest algorithm in this kind of scenario; Insertion Sort, with 0.0014 sec, is the fastest one: that’s ~100% faster. 
 
 ------------
 
