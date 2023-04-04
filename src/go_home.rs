@@ -9,11 +9,8 @@ pub fn go_home(u_arr: Vec<usize>) -> Vec<usize> {
             o_arr.extend_from_slice(&vec![0; n_len]);
         }
 
-        if o_arr[*i] == 0 {
-            o_arr[*i] = 1;
-        } else {
-            o_arr[*i] += 1;
-        }
+        o_arr[*i] += 1;
+    
     }
 
     let mut lst: Vec<usize> = Vec::new();
